@@ -1,0 +1,2 @@
+# zig-quickstarts
+🇿 Zig | Quicstarts 🇿
