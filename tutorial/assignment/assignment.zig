@@ -7,8 +7,12 @@ var variable: u32 = 5000; // unsigned 32-bit variable
 const inferred_constant = @as(i32, 5);
 var inferred_variable = @as(u32, 5000);
 
+const a: i32 = undefined;
+var b: u32 = undefined;
+
 const hello: []const u8 = "Hello";
 
 pub fn main() !void {
-    std.debug.print("{s}, {s}. constant: {d}, variable: {d}, inferred_constant: {d}, inferred_variable: {d}!\n", .{hello, "World", constant, variable, inferred_constant, inferred_variable});
+    std.debug.print("{s}, {s}. constant: {d}, variable: {d}, inferred_constant: {d}, inferred_variable: {d}, a: {d}, b: {d}!\n", 
+       .{hello, "World", constant, variable, inferred_constant, inferred_variable, a, b});
 }
